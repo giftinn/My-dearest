@@ -15,60 +15,22 @@ interface PolaroidItem {
 
 const polaroids: PolaroidItem[] = [
   {
-    id: 1,
-    image: 'https://files.catbox.moe/2uezlu.jpg',
-    song: 'Senja Sudut Kota',
-    artist: 'Samuel Cipta',
-    audio: 'https://files.catbox.moe/hde6rr.mp3'
-  },
-  {
     id: 2,
-    image: 'https://files.catbox.moe/6ud3ln.jpg',
-    song: 'Thinking Out Loud',
-    artist: 'Ed Sheeran',
-    audio: 'https://files.catbox.moe/m1asq3.mp3'
+    image: 'https://giftinn.github.io/music-host/qr.jpg',
+    song: 'To the Bone',
+    artist: 'Pamungkas',
+    audio: 'https://giftinn.github.io/music-host/pamungkas.mp3'
   },
-  {
-    id: 3,
-    image: 'https://files.catbox.moe/ly0lku.jpg',
-    song: 'Intro (End of the World)',
-    artist: 'Ariana Grande',
-    audio: 'https://files.catbox.moe/b1waeh.mp3'
-  }
 ];
 
 const SecretLetterPage: React.FC<SecretLetterPageProps> = ({ onBackToStart }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [showFinalMessage, setShowFinalMessage] = useState(false);
 
-  const fullText = `Happy Mensiversary for Us! 
-  
-First, thank you for your time buat buka gift sederhana dari aku ini (and i hope u like it hehe). I just wanna say, happy mensive for my lovely, coolest man.
+  const fullText = `happy birthday, abraham.
+semoga panjang umurnya, sehat selalu, lancar jalan rejekinya, dan selalu dijauhkan dari hal hal buruk. singkat saja, sisanya scan qr code yak.
 
-Jujur aku khawatir banget kamu udah berhari-hari hilang dan gada kabar sama sekali, aku harap dihari mensive kita kamu udah bisa ngabarin aku dan buka minigift dari aku ini. aku harap kamu juga gak akan hilang kabar lama lagi kaya gini:c dan semoga mensive kedua ini aku gak merayakan sendiri.
-
-Then, i wanna say thank you for everything u did to me, it means a lot to me fr. makasihh udah mau nge-treat aku sebaik ituu, makasih udah mau dengerin semua keluh kesah aku, cerita random aku. aku jugaa makasih banget selama ini kamu selalu sabar sama aku, jarang marah intinya u treated me like a princess. thank you, sayang. i'm sorry if i act like a kid sometimes, bikin kamu kesel, suka ngambek sometimes.. maafin aku yaa sayangg? aku beneran berharap kita bisa lastlong sayang.
-
-And bcs it's our special day, aku harap hubungan kita makin kuat, perasaan kamu ke aku masih tetap sama (kalau bisa sih makin sayang dan cinta hehehe), dan semua mimpi kita berdua terwujud satu persatu. aku juga berharap semoga kita selalu dikelilingi sama hal-hal baik dan dijauhin dari yang jahat-jahat. aku berharap setelah ini, kamu ga hilang tanpa kabar lagii.. thenn, i just wanna say that u aren't alone. kamu harus percaya kalau kamu selalu dikelilingi orang-orang yang sayang sama kamu, utamanya aku yang selalu disini buat tempat kamu pulang. bahagia terus yaa sayang, jangan sedih-sedihh, jangan capek-capek jugaa.. semoga setiap masalah yang kamu hadapi selalu diberi jalan keluar dan dipermudah.
-
-.
-.
-.
-
-i want to unravel you slowly, like a buried ache, longing to be seen. something in you felt so familiar—like the echo of a home i’ve spent my whole life trying to find.
-
-I don’t say much about how I feel,
-But loving you just feels so real.
-In quiet moments, day or night,
-You’re the reason everything feels right.
-
-If you could see my heart so clear,
-You’d know you’re what I hold most dear.
-No doubt, no fear, no trace of strife,
-You’re my favorite part of life.
-
-With all my heart, 
-Your Girlfriend.`;
+ily the most`;
 
   useEffect(() => {
     let currentIndex = 0;
@@ -133,7 +95,7 @@ Your Girlfriend.`;
           >
 
             <h3 className="text-xl sm:text-2xl font-bold text-[#162660]">
-              Our Songs & Memories 🎧
+              SCAN INI!
             </h3>
 
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
