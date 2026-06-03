@@ -69,7 +69,7 @@ const PasswordPage: React.FC<PasswordPageProps> = ({ onNext }) => {
             type="text"
             value={password}
             onChange={handleInputChange}
-            placeholder="DDMMYY"
+            placeholder="DDMMYYYY"
             maxLength={8}
             className="
               w-full
