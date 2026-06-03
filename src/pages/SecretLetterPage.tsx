@@ -31,7 +31,7 @@ const polaroids: PolaroidItem[] = [
   {
     id: 3,
     image: 'https://files.catbox.moe/ly0lku.jpg',
-    song: 'Intro (End of the World',
+    song: 'Intro (End of the World)',
     artist: 'Ariana Grande',
     audio: 'https://files.catbox.moe/b1waeh.mp3'
   }
@@ -49,10 +49,12 @@ Jujur aku khawatir banget kamu udah berhari-hari hilang dan gada kabar sama seka
 
 Then, i wanna say thank you for everything u did to me, it means a lot to me fr. makasihh udah mau nge-treat aku sebaik ituu, makasih udah mau dengerin semua keluh kesah aku, cerita random aku. aku jugaa makasih banget selama ini kamu selalu sabar sama aku, jarang marah intinya u treated me like a princess. thank you, sayang. i'm sorry if i act like a kid sometimes, bikin kamu kesel, suka ngambek sometimes.. maafin aku yaa sayangg? aku beneran berharap kita bisa lastlong sayang.
 
-And bcs it's our special day, aku harap hubungan kita makin kuat, perasaan kamu ke aku masih tetap sama (kalau bisa sih makin sayang dan cinta hehehe), dan semua mimpi kita berdua terwujud satu persatu. aku juga berharap semoga kita selalu dikelilingi sama hal-hal baik dan dijauhin dari yang jahat-jahat. aku berharap setelah ini, kamu ga hilang tanpa kabar lagii.. thenn, i just wanna say that u aren't alone. kamu harus percaya kalau kamu selalu dikelilingi orang-orang yang sayang sama kamu, utamanya aku yang selalu disini buat tempat kamu pulang. bahagia terus yaa sayang, jangan sedih-sedihh, jangan capek-capek jugaa.. semoga setiap masalah yang kamu hadapi selalu diberi jalan keluar dan dipermudah. 
+And bcs it's our special day, aku harap hubungan kita makin kuat, perasaan kamu ke aku masih tetap sama (kalau bisa sih makin sayang dan cinta hehehe), dan semua mimpi kita berdua terwujud satu persatu. aku juga berharap semoga kita selalu dikelilingi sama hal-hal baik dan dijauhin dari yang jahat-jahat. aku berharap setelah ini, kamu ga hilang tanpa kabar lagii.. thenn, i just wanna say that u aren't alone. kamu harus percaya kalau kamu selalu dikelilingi orang-orang yang sayang sama kamu, utamanya aku yang selalu disini buat tempat kamu pulang. bahagia terus yaa sayang, jangan sedih-sedihh, jangan capek-capek jugaa.. semoga setiap masalah yang kamu hadapi selalu diberi jalan keluar dan dipermudah.
+
 .
 .
 .
+
 i want to unravel you slowly, like a buried ache, longing to be seen. something in you felt so familiar—like the echo of a home i’ve spent my whole life trying to find.
 
 I don’t say much about how I feel,
@@ -95,32 +97,33 @@ Your Girlfriend.`;
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="p-6 sm:p-10 bg-gradient-to-br from-white/90 to-blue-50/90 rounded-3xl border-2 border-blue-200 backdrop-blur-lg shadow-2xl relative overflow-hidden">
+        <div className="p-6 sm:p-10 bg-[#F1E4D1]/95 rounded-3xl border-2 border-[#D0E6FD] backdrop-blur-lg shadow-2xl relative overflow-hidden">
 
           {/* corners */}
-          <div className="absolute top-2 left-2 w-4 h-4 bg-blue-300 rounded-full"/>
-          <div className="absolute top-2 right-2 w-3 h-3 bg-blue-300 rotate-45"/>
-          <div className="absolute bottom-2 left-2 w-4 h-4 border-2 border-blue-300 rounded-full"/>
-          <div className="absolute bottom-2 right-2 w-3 h-3 bg-gradient-to-br from-blue-300 to-cyan-300 rounded-lg"/>
+          <div className="absolute top-2 left-2 w-4 h-4 bg-[#D0E6FD] rounded-full"/>
+          <div className="absolute top-2 right-2 w-3 h-3 bg-[#D0E6FD] rotate-45"/>
+          <div className="absolute bottom-2 left-2 w-4 h-4 border-2 border-[#D0E6FD] rounded-full"/>
+          <div className="absolute bottom-2 right-2 w-3 h-3 bg-[#D0E6FD] rounded-lg"/>
 
           {/* TEXT */}
           <div className="text-left">
-            <div className="text-sm sm:text-base text-blue-900 whitespace-pre-wrap leading-relaxed font-medium">
+            <div className="text-sm sm:text-base text-[#162660] whitespace-pre-wrap leading-relaxed font-medium">
               {displayedText}
+
               {displayedText.length < fullText.length && (
                 <motion.span
                   animate={{ opacity: [1, 0] }}
                   transition={{ duration: 0.5, repeat: Infinity }}
-                  className="inline-block w-2 h-4 bg-blue-400 ml-1"
+                  className="inline-block w-2 h-4 bg-[#162660] ml-1"
                 />
               )}
             </div>
           </div>
+
         </div>
       </motion.div>
 
-
-      {/* POLAROID */}
+      {/* POLAROIDS */}
       <AnimatePresence>
         {showFinalMessage && (
           <motion.div
@@ -129,7 +132,7 @@ Your Girlfriend.`;
             className="space-y-6"
           >
 
-            <h3 className="text-xl sm:text-2xl font-bold text-blue-900">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#162660]">
               Our Songs & Memories 🎧
             </h3>
 
@@ -141,7 +144,7 @@ Your Girlfriend.`;
                   animate={{ opacity: 1, rotate: i % 2 ? 6 : -6, y: 0 }}
                   transition={{ delay: i * 0.2, type: 'spring' }}
                   whileHover={{ scale: 1.05, rotate: 0 }}
-                  className="bg-white p-3 rounded-xl shadow-xl w-60"
+                  className="bg-[#F1E4D1] p-3 rounded-xl shadow-xl w-60 border border-[#D0E6FD]"
                 >
                   <img
                     src={item.image}
@@ -150,16 +153,19 @@ Your Girlfriend.`;
                   />
 
                   <div className="text-left mb-2">
-                    <p className="font-semibold text-blue-900 text-sm">
+                    <p className="font-semibold text-[#162660] text-sm">
                       {item.song}
                     </p>
-                    <p className="text-xs text-blue-600">
+
+                    <p className="text-xs text-[#5A6A9A]">
                       {item.artist}
                     </p>
                   </div>
 
-                  {/* AUDIO */}
-                  <audio controls className="w-full accent-blue-500">
+                  <audio
+                    controls
+                    className="w-full"
+                  >
                     <source src={item.audio} type="audio/mpeg" />
                   </audio>
 
@@ -170,7 +176,7 @@ Your Girlfriend.`;
             {onBackToStart && (
               <button
                 onClick={onBackToStart}
-                className="px-5 py-2 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition"
+                className="px-5 py-2 bg-[#162660] text-white rounded-xl shadow-md hover:opacity-90 transition"
               >
                 Back to Start
               </button>
@@ -179,28 +185,9 @@ Your Girlfriend.`;
           </motion.div>
         )}
       </AnimatePresence>
+
     </div>
   );
 };
 
 export default SecretLetterPage;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
