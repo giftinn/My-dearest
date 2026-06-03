@@ -17,32 +17,38 @@ const ReasonsPage: React.FC<ReasonsPageProps> = ({ onNext }) => {
   const [reasons, setReasons] = useState<Reason[]>([
     {
       id: 1,
-      title: 'I wish.. ',
-      text: 'I wish, semua hal yang akan atau sedang kamu lakuin dipermudah',
+      title: 'harus jadi prioritas semua orang',
+      text: 'it’s your day, so you’re 100% the main character today. time to get all the good vibes coming your way.',
       isRevealed: false
     },
     {
       id: 2,
-      title: 'I wish..',
-      text: 'I wish, kamu selalu dikeliling hal-hal baik dan dijauhkan dari segala yang buruk',
+      title: 'makan yang enak',
+      text: 'hari ini harus maem makanan yang enak yaa, apapun yang lagi dipengen.',
       isRevealed: false
     },
     {
       id: 3,
-      title: 'I wish..',
-      text: ' I wish, kamu makin sayang sama aku. Makin sabar sama sikap dan tingkah aku dan makin dewasa',
+      title: 'dilarang banyak pikiran cak',
+      text: 'jangan giluy dulu, meski tiap hari wajib senang, tapi hari lahir ini harus jadi yang paling senang.',
       isRevealed: false
     },
     {
       id: 4,
-      title: 'I wish..',
-      text: 'Aku harap kamu selalu bahagia, entah dengan cara apapun baik sama aku atau pun gak sama aku',
+      title: 'kado?',
+      text: 'lagi mau apa pacarkuu? ingfokan nanti biar ada kadonya dari gua wkwkwk',
       isRevealed: false
     },
     {
       id: 5,
-      title: 'I wish..',
-      text: 'Dan aku sangat berharap kamu selalu dikasih kekuatan buat ngehadapin segala ujian yang akan datang atau sedang kamu hadapi',
+      title: 'quality time.',
+      text: 'entah sama diri sendiri alias my time, atau sama gua, yang jelas gaada yang kemana mana.',
+      isRevealed: false
+    },
+    {
+      id: 6,
+      title: 'dokumentasi bos',
+      text: 'kasih tau satu dunia kalau 7 juni pacarku ultah.',
       isRevealed: false
     }
   ]);
@@ -69,11 +75,11 @@ const ReasonsPage: React.FC<ReasonsPageProps> = ({ onNext }) => {
       <div className="space-y-4">
 
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold gradient-text leading-relaxed">
-          My wish for You
+          Birthday bucket list for today
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl text-[#162660] font-medium">
-          Tap each heart to reveal my wishes.
+          Tap each heart to reveal the lists.
         </p>
 
       </div>
