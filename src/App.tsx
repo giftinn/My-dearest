@@ -107,7 +107,7 @@ function App() {
     <div className="min-h-screen relative overflow-hidden">
 
       {/* MAIN BACKGROUND */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-sky-50 to-indigo-100"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#162660] via-[#1E3278] to-[#2A3F8C]"></div>
 
       {/* IMAGE OVERLAY */}
       <div
@@ -121,13 +121,13 @@ function App() {
       />
 
       {/* SOFT GLASS LIGHT */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-blue-50/40 to-white/30"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#F1E4D1]/20 via-[#D0E6FD]/15 to-[#F1E4D1]/20"></div>
 
       {/* FLOATING BLOBS */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#D0E6FD] rounded-full mix-blend-soft-light filter blur-3xl opacity-25 animate-pulse"></div>
 
       <div
-        className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"
+        className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#F1E4D1] rounded-full mix-blend-soft-light filter blur-3xl opacity-20 animate-pulse"
         style={{ animationDelay: '1s' }}
       ></div>
 
