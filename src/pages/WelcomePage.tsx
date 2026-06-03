@@ -37,7 +37,7 @@ const WelcomePage: React.FC<WelcomePageProps> = ({ onNext }) => {
             textShadow: '0 4px 20px rgba(22, 38, 96, 0.25)'
           }}
         >
-          Helloo
+           kiw, my mine gua
         </motion.h1>
 
         <motion.div
@@ -46,7 +46,6 @@ const WelcomePage: React.FC<WelcomePageProps> = ({ onNext }) => {
           transition={{ delay: 0.5 }}
         >
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#162660] font-medium">
-            Happy Birthday, Febri!
           </p>
         </motion.div>
 
