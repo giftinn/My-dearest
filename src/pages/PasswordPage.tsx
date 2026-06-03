@@ -11,7 +11,7 @@ const PasswordPage: React.FC<PasswordPageProps> = ({ onNext }) => {
   const [showError, setShowError] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const correctPassword = '100126';
+  const correctPassword = '07062004';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,7 +53,7 @@ const PasswordPage: React.FC<PasswordPageProps> = ({ onNext }) => {
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl text-[#162660] font-medium">
-          Hint; Tanggal dimana aku pertama kali chat kamu
+          Hint; Tanggal lahir kamu coba
         </p>
 
       </div>
