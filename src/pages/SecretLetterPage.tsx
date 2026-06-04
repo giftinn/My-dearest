@@ -17,9 +17,9 @@ const polaroids: PolaroidItem[] = [
   {
     id: 2,
     image: 'https://giftinn.github.io/music-host/qr.jpg',
-    song: 'To the Bone',
-    artist: 'Pamungkas',
-    audio: 'https://giftinn.github.io/music-host/pamungkas.mp3'
+    song: 'Tangguh',
+    artist: 'Petra Sihombing',
+    audio: 'https://giftinn.github.io/music-host/tangguh-petra.mp3'
   },
 ];
 
